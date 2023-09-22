@@ -10,7 +10,7 @@ export function LandingPage () {
                 Finden Sie Ihren perfekten Aufenthaltsort
                 </div>
                 <div className="MainText">
-                ChiliHotels – Wo Ihr Traumaufenthalt Wirklichkeit wird
+                SpicyTraveling – Wo Ihr Traumaufenthalt Wirklichkeit wird
                 </div>
             </div>
             <div className="LandingImage">
