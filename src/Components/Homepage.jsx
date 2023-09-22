@@ -1,5 +1,9 @@
-
 import React, { useEffect, useState } from "react";
+import '../Styling/Homepage.css'
+
+
+import { Navbar } from "./HomepageComps/Navbar";
+
 export default function Homepage () {
 
     const [hotels, setHotels] = useState([])
@@ -20,6 +24,7 @@ export default function Homepage () {
   
     return (
       <div>
+        <Navbar/>
       </div>
     );
   }
