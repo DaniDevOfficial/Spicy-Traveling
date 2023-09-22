@@ -20,9 +20,7 @@
     font-size: 4rem;
     font-weight: bold;
 }
-.MainText{
-    color: grey;
-}
+
 
 .LandingImage img{
     width: 40vw;
@@ -40,6 +38,13 @@
     }
     .LandingText{
         width: 90vw;
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+    .MainTitle{
+        font-size: 3rem;
+        margin-bottom: 3vh;
+        font-weight: bold;
     }
 
 }

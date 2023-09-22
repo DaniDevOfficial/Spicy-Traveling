@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import '../Styling/Homepage.css'
 import { LandingPage } from "./HomepageComps/LandingPage";
-
+import { Searchbar } from "./HomepageComps/Searchbar";
 import { Navbar } from "./HomepageComps/Navbar";
 
 export default function Homepage () {
@@ -24,8 +24,9 @@ export default function Homepage () {
   
     return (
       <div>
-        <Navbar/>
+        <Navbar />
         <LandingPage />
+        <Searchbar />
       </div>
     );
   }

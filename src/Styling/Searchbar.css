@@ -1,0 +1,26 @@
+.SearchContainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    width: 100%;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 90vw;
+
+}
+
+.Search:focus {
+    border-bottom: 2px solid red;
+}
