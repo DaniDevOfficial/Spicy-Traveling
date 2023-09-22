@@ -1,0 +1,25 @@
+
+import React, { useEffect, useState } from "react";
+export default function Homepage () {
+
+    const [hotels, setHotels] = useState([])
+
+    const fetchData = () => {
+      fetch("http://api-praktikanten-assessment.chili.ch/Hotel/GetHotels    ")
+        .then(response => {
+          return response.json()
+        })
+        .then(data => {
+            setHotels(data)
+        })
+    }
+  console.log(hotels)
+    useEffect(() => {
+        fetchData()
+    }, [])
+  
+    return (
+      <div>
+      </div>
+    );
+  }
