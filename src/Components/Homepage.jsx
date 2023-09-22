@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from "react";
 import '../Styling/Homepage.css'
 import { LandingPage } from "./HomepageComps/LandingPage";
 import { Searchbar } from "./HomepageComps/Searchbar";
 import { Navbar } from "./HomepageComps/Navbar";
-
+import { AllHotels } from './HomepageComps/AllHotels';
 export default function Homepage () {
 
-    const [hotels, setHotels] = useState([])
 
-    const fetchData = () => {
-      fetch("http://api-praktikanten-assessment.chili.ch/Hotel/GetHotels    ")
-        .then(response => {
-          return response.json()
-        })
-        .then(data => {
-            setHotels(data)
-        })
-    }
-  console.log(hotels)
-    useEffect(() => {
-        fetchData()
-    }, [])
-  
     return (
       <div>
         <Navbar />
         <LandingPage />
         <Searchbar />
-      </div>
+        <AllHotels />
+        </div>
     );
   }

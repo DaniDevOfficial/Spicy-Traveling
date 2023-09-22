@@ -1,0 +1,46 @@
+.HotelList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .SingleHotelContainer {
+    width: 400px;
+    box-sizing: border-box; 
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .SingleHotelContainer:nth-child(3n + 1) { /* From ChatGPT so there are at most 3 items per row*/
+    clear: left; 
+  }
+  .SingleHotelImageContainer { /* I knew this existed but didint knwo the application (ChatGPT)*/
+    width: 400px; 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative; 
+  }
+
+  .SingleHotelImage {
+    max-width: 100%; 
+    height: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .SingleHotelImage {
+    max-width: 100%;
+    height: auto; 
+  }
+  
+  .SingleHotelPlace {
+    color: red;
+    font-size: 0.8rem;
+  }
+  
+  .SingleHotelName {
+    font-size: 1.5rem;
+  }
+  
