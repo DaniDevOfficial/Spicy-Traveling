@@ -22,11 +22,13 @@ export function AllHotels() {
                 {hotels.map((hotel) => (
                     <div className="SingleHotelContainer" key={hotel.id}>
                         <div className="SingleHotelImageContainer">
-                        <img src={hotel.imageUrl} alt="" className="SingleHotelImage" />
+                            <img src={hotel.imageUrl} alt="" className="SingleHotelImage" />
                         </div>
-                        <div className="SingleHotelPlace">{hotel.ortschaft}</div>
-                        <div className="SingleHotelName">{hotel.name}</div>
-                        <div className="SingleHotelPrice">Ab CHF {hotel.preis} Pro Nacht</div>
+                        <div className="SingleHotelText">
+                            <div className="SingleHotelPlace">{hotel.ortschaft}</div>
+                            <div className="SingleHotelName">{hotel.name}</div>
+                            <div className="SingleHotelPrice">Ab CHF {hotel.preis} Pro Nacht</div>
+                        </div>
                     </div>
                 ))}
             </div>

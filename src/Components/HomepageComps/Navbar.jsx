@@ -25,11 +25,14 @@ export function Navbar() {
             </a>
             <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                 <ul >
+                    <div className='middleSection'>
                         <li>Buchung</li>
                         <li>Einrichtungen</li>
                         <li>Über uns</li>
                         <li>Lage</li>
                         <li>Kontakt</li>
+                    </div>
+
 
                     <div className="rightLoginbutton">
                         <li className='loginButton'>

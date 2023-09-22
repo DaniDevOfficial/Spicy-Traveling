@@ -7,9 +7,12 @@
   
   .SingleHotelContainer {
     width: 400px;
+    border-radius: 10px;
     box-sizing: border-box; 
-    padding: 10px;
     overflow: hidden;
+    padding-bottom: 30px;
+    background-color: rgba(173, 173, 173, 0.249);
+
   }
   
   .SingleHotelContainer:nth-child(3n + 1) { /* From ChatGPT so there are at most 3 items per row*/
@@ -19,7 +22,7 @@
     width: 400px; 
     height: 200px; 
     overflow: hidden; 
-    position: relative; 
+    position: relative;
   }
 
   .SingleHotelImage {
@@ -42,5 +45,8 @@
   
   .SingleHotelName {
     font-size: 1.5rem;
+    margin-bottom: 1vh;
   }
-  
+  .SingleHotelText{
+    padding: 10px 30px;
+  }

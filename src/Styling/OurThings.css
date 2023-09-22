@@ -1,0 +1,55 @@
+.ThingsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .ThingsContainer {
+        flex-direction: column;
+    }
+}
+
+
+.ThingsTitle {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+.ThingsGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ThingsGridThing {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgba(156, 156, 156, 0.236);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.ThingsGridThing img{
+    height: 30px;
+}
+.ThingsGrid:nth-child(3n + 1) {
+    /* From ChatGPT so there are at most 3 items per row*/
+    clear: left;
+}
+
+.ThingsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto; 
+}

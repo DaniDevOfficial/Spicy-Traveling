@@ -14,6 +14,11 @@ export function Searchbar() {
         required={true}
         placeholder="Search"
       />
+      <input
+        type="submit"
+        className='SearchButton'
+        value="Search"
+      />
     </div>
   );
 }

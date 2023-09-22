@@ -1,9 +1,0 @@
-#Topics {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .grid-container-topics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }

@@ -4,6 +4,7 @@ import { Searchbar } from "./HomepageComps/Searchbar";
 import { Navbar } from "./HomepageComps/Navbar";
 import { AllHotels } from './HomepageComps/AllHotels';
 import { Footer } from './HomepageComps/Footer';
+import { OurThings } from './HomepageComps/OurThings';
 export default function Homepage () {
 
 
@@ -13,6 +14,7 @@ export default function Homepage () {
         <LandingPage />
         <Searchbar />
         <AllHotels />
+        <OurThings /> 
         <Footer />
         </div>
     );
