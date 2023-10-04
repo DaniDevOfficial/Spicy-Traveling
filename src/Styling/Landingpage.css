@@ -1,0 +1,50 @@
+.LandingContainer{
+
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        flex-wrap: wrap;
+        padding: 30px;
+}
+@media (max-width: 768px) {
+    .LandingContainer {
+        flex-direction: column; /* Idee von ChatGPT */
+    }
+}
+.LandingText{
+    width: 40vw;
+
+}
+.MainTitle{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+.LandingImage img{
+    width: 40vw;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+@media (max-width: 768px) {
+
+    .LandingImage img{
+        width: 90vw;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .LandingText{
+        width: 90vw;
+        text-align: center;
+        margin-bottom: 4vh;
+    }
+    .MainTitle{
+        font-size: 3rem;
+        margin-bottom: 3vh;
+        font-weight: bold;
+    }
+
+}
